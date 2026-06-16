@@ -1,0 +1,17 @@
+@use '../../../utilities/styles/variables.scss' as *;
+
+.button {
+    background-color: $main-green-color;
+    font-weight: 700;
+    font-size: var(--button-font-size, 20px);
+    line-height: 150%;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+
+    &:hover {
+        transition: all 0.3s ease 0s;
+        background-color: $text-color;
+    }
+}
