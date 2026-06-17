@@ -1,0 +1,83 @@
+@use "../../../utilities/styles/variables.scss" as *;
+
+.heroHome-block {
+    // .herHome-block__title
+    &__title {
+        font-size: 52px;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: -2px;
+        margin-bottom: 16px;
+
+        &__highlite {
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                width: 183px;
+                height: 23px;
+                position: absolute;
+                bottom: 18%;
+                left: 0;
+                border-radius: 4px;
+                background-color: $highlite-color;
+                z-index: -1;
+            }
+        }
+    }
+    // .heroHome-block__text
+    &__text {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.4px;
+        margin-bottom: 32px;
+    }
+    // .heroHome-block__button
+    &__button {
+        width: 198px;
+        height: 60px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 376px) {
+    .heroHome-block {
+        &__title {
+            font-size: 64px;
+
+            &__highlite::after {
+                width: 230px;
+                height: 29px;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .heroHome-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            font-size: 72px;
+            margin-bottom: 12px;
+            text-align: center;
+
+            &__highlite::after {
+                width: 270px;
+                height: 39px;
+                bottom: 12%;
+                left: -1%;
+            }
+        }
+        &__text {
+            max-width: 580px;
+            text-align: center;
+        }
+        &__button {
+            margin-bottom: 80px;
+        }
+    }
+}
