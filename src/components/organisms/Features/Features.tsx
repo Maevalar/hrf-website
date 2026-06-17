@@ -1,4 +1,4 @@
-import { FeatureItem } from "../../molecules/AdvantageItem/FeatureItem";
+import { FeatureItem } from "../../molecules/FeatureItem/FeatureItem";
 import { FEATURES } from "../../../utilities/constants";
 import './Features.scss'
 
