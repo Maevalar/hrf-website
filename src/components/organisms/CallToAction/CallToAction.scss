@@ -1,0 +1,88 @@
+.action-block {
+    position: relative;
+    background-color: #e9ede8;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 16px;
+    overflow: hidden;
+
+    // .action-block__title
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: -2px;
+        text-align: center;
+        margin-bottom: 12px;
+        z-index: 1;
+    }
+    // .action-block__text
+    &__text {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.4px;
+        text-align: center;
+        margin-bottom: 32px;
+        z-index: 1;
+    }
+    &__button {
+        width: 176px;
+        height: 57px;
+        z-index: 1;
+    }
+    &__plug {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 21.8%;
+        transform: translate(-20%, 20%);
+        display: none;
+        z-index: 0;
+    }
+    &__knife {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24.2%;
+        transform: translate(10%, -35%) rotate(3deg);
+        display: none;
+        z-index: 0;
+    }
+}
+
+@media (min-width: 376px) {
+    .action-block {
+        padding: 80px 0px;
+        &__title {
+            font-size: 48px;
+        }
+        &__text {
+            margin-bottom: 40px;
+        }
+        &__plug {
+            display: block;
+        }
+        &__knife {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .action-block {
+        padding: 96px 0px;
+        &__plug {
+            width: 26.3%;
+            height: 98.5%;
+            transform: translate(-25%, 10%);
+        }
+        &__knife {
+            width: 28.3%;
+            height: 85%;
+            transform: translate(20%, 0) rotate(3deg);
+        }
+    }
+}

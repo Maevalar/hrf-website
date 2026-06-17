@@ -2,10 +2,11 @@
 
 .mainButton {
     background-color: $main-green-color;
+    font-family: Nunito;
     font-weight: 700;
     font-size: var(--button-font-size, 20px);
     line-height: 150%;
-    border-radius: 10px;
+    border-radius: 12px;
     color: #fff;
     cursor: pointer;
     border: 0;
