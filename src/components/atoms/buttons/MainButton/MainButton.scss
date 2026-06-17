@@ -1,6 +1,6 @@
-@use '../../../utilities/styles/variables.scss' as *;
+@use '../../../../utilities/styles/variables.scss' as *;
 
-.button {
+.mainButton {
     background-color: $main-green-color;
     font-weight: 700;
     font-size: var(--button-font-size, 20px);
