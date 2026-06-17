@@ -1,6 +1,17 @@
-@use './components/utilities/styles/reset-styles.scss' as *;
+@use './utilities/styles/reset-styles.scss' as *;
+@use './utilities/styles/variables.scss' as *;
+
+body{ 
+    background-color: #F6F5F1;
+}
 
 
-html {
+.title {
     font-family: Nunito;
-};
+    color: $main-green-color;
+}
+
+.text {
+    font-family: "Nunito Sans";
+    color: $text-color;
+}

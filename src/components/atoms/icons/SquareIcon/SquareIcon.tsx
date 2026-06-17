@@ -7,12 +7,8 @@ type SquareIconProps = {
 
 export const SquareIcon: React.FC<SquareIconProps> = ( {className = '', src} ) => {
     return (
-      <div className="square-icon">
-        <img
-          src={src}
-          alt=""
-          className={className}
-        />
+      <div className={`square-icon ${className}`}>
+        <img src={src} alt="" />
       </div>
     );
 }
