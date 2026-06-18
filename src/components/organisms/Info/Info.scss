@@ -1,0 +1,78 @@
+@use "../../../utilities/styles/variables.scss" as *;
+
+.info-block {
+    &__info {
+        margin-bottom: 32px;
+    }
+    // .info-block__title
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: -2px;
+        margin-bottom: 20px;
+    }
+    // .info-block__text
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: -0.4px;
+        }
+    }
+}
+
+@media (min-width: 376px) {
+    .info-block {
+        &__info {
+            margin-bottom: 40px;
+        }
+        &__title {
+            font-size: 48px;
+        }
+        &__text {
+            span {
+                position: relative;
+            }
+            span::after {
+                content: "";
+                width: 103px;
+                height: 10px;
+                position: absolute;
+                bottom: 18%;
+                left: 2%;
+                border-radius: 3px;
+                background-color: $highlite-color;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .info-block {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        &__info {
+            margin-bottom: 0;
+            flex: 1;
+        }
+        &__title {
+            line-height: 100%;
+        }
+        &__image {
+            width: 635px;
+            height: 450px;
+        }
+    }
+}
