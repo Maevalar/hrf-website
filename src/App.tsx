@@ -1,11 +1,11 @@
 import './App.scss'
-import { Info } from './components/organisms/Info/Info';
+import { Header } from './components/organisms/Header/Header';
 
 function App() {
 
   return (
     <>
-        <Info />
+        <Header />
     </>
   );
 }

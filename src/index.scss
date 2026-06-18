@@ -1,6 +1,13 @@
 @use './utilities/styles/reset-styles.scss' as *;
 @use './utilities/styles/variables.scss' as *;
 
+@font-face {
+    font-family: 'Recoleta';
+    src: url('./assets/fonts/Recoleta-SemiBold.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
 body{ 
     background-color: #F6F5F1;
 }

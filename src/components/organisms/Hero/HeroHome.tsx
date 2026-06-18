@@ -8,10 +8,10 @@ type HeroHomeProps = {
 export const HeroHome: React.FC<HeroHomeProps> = ({ className }) => {
     return (
       <section className={`heroHome-block ${className}`}>
-        <h1 className="heroHome-block__title title">
+        <h2 className="heroHome-block__title title">
           <span className="heroHome-block__title__highlite">Healthy</span> meals, zero
           fuss
-        </h1>
+        </h2>
         <p className="heroHome-block__text text">
           Discover eight quick, whole-food recipes that you can cook tonight—no
           processed junk, no guesswork.

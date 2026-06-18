@@ -1,0 +1,92 @@
+@use "../../../utilities/styles/variables.scss" as *;
+
+.navbar {
+    position: absolute;
+    top: -250px;
+    transform: translate(0, -2%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px;
+    background-color: #fff;
+    box-shadow: 0px 12px 22px -12px #39585229;
+    border-radius: 8px;
+    left: 16px;
+    right: 16px;
+    transition: all 0.4s ease 0s;
+
+    // .navbar__links
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 8px;
+    }
+    // .navbar__link
+    &__link {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.3%;
+        text-decoration: none;
+        background-image: linear-gradient($highlite-color, $highlite-color);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+        width: fit-content;
+
+        &.active {
+            background-size: 100% 3px;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                background-size: 100% 3px;
+            }
+        }
+    }
+    &__button {
+        width: 100%;
+        height: 52px;
+    }
+
+    &.active {
+        top: 100%;
+    }
+}
+
+@media (min-width: 376) {
+    .navbar {
+        left: 32px;
+        right: 32px;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar {
+        position: relative;
+        top: 0;
+        background-color: #f6f5f1;
+        box-shadow: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 92px;
+        border-radius: 0;
+
+        &__links {
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        &__button {
+            width: 167px;
+            height: 52px;
+        }
+
+        &.active {
+            top: 0;
+        }
+    }
+}
