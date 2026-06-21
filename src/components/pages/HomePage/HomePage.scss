@@ -1,0 +1,19 @@
+.container {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+@media (min-width: 376px){
+    .container {
+        gap: 80px;
+    }
+}
+
+@media (min-width: 769px){
+    .container {
+        padding-top: 172px;
+        gap: 85px;
+    }
+}

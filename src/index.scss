@@ -1,10 +1,29 @@
-@use './utilities/styles/reset-styles.scss' as *;
-@use './utilities/styles/variables.scss' as *;
+@use "./utilities/styles/reset-styles.scss" as *;
+@use "./utilities/styles/variables.scss" as *;
 
-body{ 
-    background-color: #F6F5F1;
+@font-face {
+    font-family: "Recoleta";
+    src: url("./assets/fonts/Recoleta-SemiBold.woff2");
+    font-weight: 600;
+    font-style: normal;
 }
 
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f6f5f1;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+}
 
 .title {
     font-family: Nunito;
@@ -14,4 +33,20 @@ body{
 .text {
     font-family: "Nunito Sans";
     color: $text-color;
+}
+
+@media (min-width: 376px) {
+    .container {
+    }
+}
+@media (min-width: 769px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        padding: 0 124px;
+        max-width: 1440px;
+    }
 }

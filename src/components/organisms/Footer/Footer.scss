@@ -1,0 +1,47 @@
+@use '../../../utilities/styles/variables.scss' as *;
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    height: 122px;
+    // .footer-block__text
+    &__text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.3px;
+
+        &__love {
+            color: #cd2c2c;
+        }
+
+        &__care {
+            color: #127821;
+        }
+    }
+    // .footer-block__icons
+    &__icons {
+        display: flex;
+        gap: 24px;
+    }
+    // .footer-block__icon
+    &__icon {
+        width: 22px;
+        height: 22px;
+        color: $main-green-color;
+    }
+}
+
+
+@media (min-width: 376px){
+    .footer-block {
+        height: 104px;
+        flex-direction: row;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+}

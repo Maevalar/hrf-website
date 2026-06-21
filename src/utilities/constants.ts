@@ -15,3 +15,18 @@ export const FEATURES = [
     iconPatn: "/icons/search_icon.svg",
   },
 ];
+
+export const NAV_ITEMS = [
+  {
+    text: "Home",
+    path: "/",
+  },
+  {
+    text: "About",
+    path: "/about",
+  },
+  {
+    text: "Recipes",
+    path: "/recipes",
+  },
+];
