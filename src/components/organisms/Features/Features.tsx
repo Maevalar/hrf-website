@@ -7,15 +7,14 @@ type FeaturesProps = {
 }
 
 export const Features: React.FC<FeaturesProps> = ({ title }) => {
+    const features = [...FEATURES];
     return (
       <section className="features-block">
         <h2 className="features-block__title title">{title}</h2>
         <div className="features-block__items">
-          {FEATURES.map((feature) => (
+          {features.map((feature) => (
             <FeatureItem
-              title={feature.title}
-              text={feature.text}
-              iconPath={feature.iconPatn}
+              feature={feature}
             />
           ))}
         </div>

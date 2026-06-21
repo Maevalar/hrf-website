@@ -1,0 +1,28 @@
+.listItem-block {
+    display: flex;
+    gap: 20px;
+    // .listItem-block__info
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &__icon {
+        padding: 8px 4px;
+        align-self: flex-start;
+    }
+    // .listItem-block__title
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -1px;
+    }
+    // .listItem-block__text
+    &__text {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.4px;
+    }
+}

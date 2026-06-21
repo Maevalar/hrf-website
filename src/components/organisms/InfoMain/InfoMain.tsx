@@ -1,4 +1,4 @@
-import "./Info.scss";
+import "./InfoMain.scss";
 
 type InfoProps = {
   className?: string;
