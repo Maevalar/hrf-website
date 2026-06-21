@@ -1,19 +1,20 @@
-.container {
+.homePage {
     padding-top: 120px;
     display: flex;
     flex-direction: column;
     gap: 64px;
 }
 
-@media (min-width: 376px){
-    .container {
+@media (min-width: 768px){
+    .homePage {
+        padding-top: 140px;
         gap: 80px;
     }
 }
 
-@media (min-width: 769px){
-    .container {
+@media (min-width: 1440px){
+    .homePage {
         padding-top: 172px;
-        gap: 85px;
+        gap: 96px;
     }
 }

@@ -1,3 +1,20 @@
-h1 {
-    font-size: 50px;
+.aboutPage {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+@media (min-width: 768px){
+    .aboutPage {
+        padding-top: 156px;
+        gap: 80px;
+    }
+}
+
+@media (min-width: 1440px){
+    .aboutPage {
+        padding-top: 172px;
+        gap: 96px;
+    }
 }

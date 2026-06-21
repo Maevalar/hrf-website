@@ -1,19 +1,18 @@
+import type { Feature } from "../../../types/Feature";
 import { SquareIcon } from "../../atoms/icons/SquareIcon/SquareIcon";
 import './FeatureItem.scss'
 
 type FeatureItemProps = {
-  title: string;
-  text: string;
-  iconPath: string;
-  classname?: string;
+  feature: Feature;
+  className?:string;
 };
 
-export const FeatureItem: React.FC<FeatureItemProps> = ({ title, text, iconPath, classname }) => {
+export const FeatureItem: React.FC<FeatureItemProps> = ({ feature, className }) => {
     return (
-      <div className={`feature-item ${classname}`}>
-        <SquareIcon src={iconPath} className="feature-item__icon" />
-        <h3 className="feature-item__title title">{title}</h3>
-        <p className="feature-item__text text">{text}</p>
+      <div className={`feature-item ${className}`}>
+        <SquareIcon src={feature.iconPath} className="feature-item__icon" />
+        <h3 className="feature-item__title title">{feature.title}</h3>
+        <p className="feature-item__text text">{feature.text}</p>
       </div>
     );
 }
