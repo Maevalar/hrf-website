@@ -1,3 +1,31 @@
-h1 {
-    font-size: 50px;
+.recipesPage {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    &__recipes{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (min-width: 768px){
+    .recipesPage {
+        padding-top: 140px;
+        gap: 80px;
+    }
+}
+
+@media (min-width: 1440px){
+    .recipesPage {
+        padding-top: 172px;
+        gap: 96px;
+
+        &__recipes{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
 }
